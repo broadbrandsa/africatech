@@ -5,7 +5,7 @@ export function HowItWorks() {
   return (
     <section className="border-y bg-card py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeading number="07" eyebrow="Four steps" title={steps.h2} />
+        <SectionHeading number="08" eyebrow="Four steps" title={steps.h2} />
 
         <ol className="mt-12 grid gap-px overflow-hidden rounded-xl border bg-border sm:grid-cols-2 lg:grid-cols-4">
           {steps.items.map((step, i) => (

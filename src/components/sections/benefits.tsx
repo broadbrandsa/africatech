@@ -8,7 +8,7 @@ export function Benefits() {
     <section className="border-y bg-card py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
-          number="05"
+          number="06"
           eyebrow="Your pass unlocks"
           title={benefits.h2}
         />

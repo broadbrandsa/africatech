@@ -8,7 +8,7 @@ export function AboutDsg() {
   return (
     <section className="py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeading number="06" eyebrow="Your host" title={dsg.h2} />
+        <SectionHeading number="07" eyebrow="Your host" title={dsg.h2} />
 
         <div className="mt-8 grid gap-12 lg:grid-cols-[1fr_auto]">
           <div className="max-w-2xl">

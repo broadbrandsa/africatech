@@ -38,19 +38,24 @@ export const stats = {
   h2: "The continent's defining tech gathering.",
   items: [
     { value: "13,500+", label: "attendees" },
-    { value: "450", label: "speakers" },
+    { value: "450", label: "speakers across 230 sessions" },
     { value: "132", label: "countries" },
     { value: "1,100+", label: "VIPs" },
     { value: "650+", label: "government & policymakers" },
     { value: "47,500", label: "connections made" },
+    { value: "38,200+", label: "leads generated onsite by exhibitors in 3 days" },
+    { value: "$40m", label: "total PR value across ATF media & marketing channels" },
   ],
   kicker: "46% of attendees hold purchasing budgets of US$5m+.",
+  mix: "12,000 enterprise attendees, joined by 750 startups and 250 investors.",
   source: "All 2025 figures, official ATF post-show data.",
 } as const;
 
 export const audience = {
   h2: "Your next customers walk this floor.",
   body: "Africa Tech Festival unites the full ecosystem across six pillars — Telecoms & Connectivity, Data Centres, AI, Cybersecurity, Startups and Digital Transformation — on eight content stages. The 2025 audience: 24% telecom operators, 29% technology solutions, 9% government, 8% banking & finance. More than half are director-level or above.",
+  // Adapted from the official ATF 2026 brochure
+  body2: "In ATF's own words: this is the only forum that brings together the infrastructure powering the continent and the technologies transforming it — where strategy becomes execution, partnerships are formed, and investment decisions accelerate Africa's digital economy.",
   pillars: [
     "Telecoms & Connectivity",
     "Data Centres",
@@ -77,6 +82,27 @@ export const audience = {
     "Absa",
   ],
   companiesStat: "5,510 unique companies attended in 2025.",
+  // 2026 sponsors/exhibitors already confirmed (africatechfestival.com + Halls 1–4 floor plan, July 2026)
+  confirmed2026: [
+    "MTN",
+    "Orange",
+    "Eutelsat",
+    "ServiceNow",
+    "Zoho",
+    "ManageEngine",
+    "Odoo",
+    "Tarana",
+    "Spacecom",
+    "Hytera",
+    "OpenServe",
+    "Sentech",
+    "Comviva",
+    "WIOCC",
+    "Legrand",
+    "Turksat",
+  ],
+  confirmed2026Label: "Already committed to the 2026 floor:",
+  confirmed2026Suffix: "— and the halls are filling up.",
   image: "/images/event-imagery/atf-showfloor-crowd.jpg",
 } as const;
 
@@ -128,6 +154,40 @@ export const proven = {
       alt: "Big screen at the DSG stand, AfricaCom 2022",
     },
   ],
+} as const;
+
+// Verbatim sponsor/exhibitor testimonials — africatechfestival.com/sponsor-exhibit
+// (fetched 2026-07-08; trimmed with ellipses, wording unchanged)
+export const testimonials = {
+  h2: "Don't take our word for it.",
+  items: [
+    {
+      quote:
+        "This is really the most important show for us on the continent… Africa Tech Festival represents the beating heart of that ecosystem. We can meet all our partners, all our customers and a lot of our prospects and friends here.",
+      name: "Rhys Morgan",
+      role: "VP for Africa and Western Europe, SES",
+    },
+    {
+      quote:
+        "I've been in many events across Africa, but I think this is the only one, honestly today, where I can see all the major players attending. So definitely this is the place to be.",
+      name: "Philippe Baudrier",
+      role: "General Manager, Eutelsat Africa",
+    },
+    {
+      quote:
+        "It's my favourite event, to be honest, because I have a lot of interaction with people, a lot of energy, lots of very good vibes… For sure we'll come next year!",
+      name: "Jean-François Arnod",
+      role: "Chief Commercial Marketing Officer, Orange",
+    },
+    {
+      quote:
+        "We are a returning sponsor, and we saw great take up last year… We got to engage with so many different organizations.",
+      name: "Lebogang Luvuno",
+      role: "BEEE Executive, Microsoft",
+    },
+  ],
+  source: "Sponsor & exhibitor testimonials published by Africa Tech Festival",
+  sourceUrl: "https://africatechfestival.com/sponsor-exhibit/",
 } as const;
 
 export const benefits = {

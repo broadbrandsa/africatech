@@ -21,6 +21,9 @@ export function Audience() {
             <p className="mt-6 leading-relaxed text-muted-foreground">
               {audience.body}
             </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              {audience.body2}
+            </p>
             <ul className="mt-8 flex flex-wrap gap-2">
               {audience.pillars.map((pillar) => (
                 <li key={pillar}>
@@ -70,6 +73,18 @@ export function Audience() {
         <span className="text-brand">{audience.companiesStat}</span> Names from
         the official 2025 attendee list.
       </p>
+
+      <div className="mx-auto mt-12 max-w-6xl px-6">
+        <p className="text-xs font-medium tracking-[0.25em] uppercase text-muted-foreground">
+          {audience.confirmed2026Label}
+        </p>
+        <p className="mt-4 max-w-4xl text-lg leading-relaxed font-medium text-foreground/90">
+          {audience.confirmed2026.join(" · ")}{" "}
+          <span className="text-muted-foreground">
+            {audience.confirmed2026Suffix}
+          </span>
+        </p>
+      </div>
     </section>
   );
 }

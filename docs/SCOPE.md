@@ -12,12 +12,13 @@
 3. Audience ("Your next customers walk this floor")
 4. Offer / pricing card (centerpiece)
 5. Proven model — past co-exhibitors + 2022 stand gallery
-6. Pass benefits ("Beyond the stand")
-7. About DSG (host credibility)
-8. How it works (4 steps)
-9. FAQ (accordion)
-10. Final CTA band
-11. Footer
+6. Testimonials — verbatim sponsor quotes from africatechfestival.com/sponsor-exhibit
+7. Pass benefits ("Beyond the stand")
+8. About DSG (host credibility)
+9. How it works (4 steps)
+10. FAQ (accordion)
+11. Final CTA band
+12. Footer
 
 Copy source of record: `site-content/04-SITE-COPY.md` in the content pack.
 

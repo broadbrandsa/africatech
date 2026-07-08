@@ -9,6 +9,7 @@ import { HowItWorks } from "@/components/sections/how-it-works";
 import { Offer } from "@/components/sections/offer";
 import { Proven } from "@/components/sections/proven";
 import { Stats } from "@/components/sections/stats";
+import { Testimonials } from "@/components/sections/testimonials";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Audience />
       <Offer />
       <Proven />
+      <Testimonials />
       <Benefits />
       <AboutDsg />
       <HowItWorks />
