@@ -2,13 +2,12 @@
 
 ## GitHub repo setup
 
-- Create a new **private** repo (suggested: `dsg/atf2026-invite`).
-- Push this project as the repo root (the project is fully self-contained).
+- Repo: **https://github.com/broadbrandsa/africatech** (currently public — make private before sharing pricing externally if preferred).
+- The project is the repo root (fully self-contained); `main` is the default branch.
 - Protect `main`; PR flow optional for a site this size.
 
 ```bash
-git remote add origin git@github.com:<org>/atf2026-invite.git
-git push -u origin main
+git push origin main   # remote "origin" already configured
 ```
 
 ## Vercel project setup
