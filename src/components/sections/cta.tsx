@@ -1,7 +1,7 @@
 import { Mail } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { disclaimer, finalCta, MAILTO } from "@/content/site";
+import { disclaimer, dsg, event, finalCta, MAILTO } from "@/content/site";
 
 export function Cta() {
   return (
@@ -28,7 +28,27 @@ export function Cta() {
         </div>
         <div className="mx-auto mt-14 max-w-2xl space-y-3 text-xs leading-relaxed text-white/70">
           <p>{disclaimer}</p>
-          <p>{finalCta.finePrint}</p>
+          <p>
+            <a
+              href={event.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-white"
+            >
+              Africa Tech Festival
+            </a>{" "}
+            is organised by Informa. DSG is an independent exhibitor; this
+            invitation is issued by DSG (
+            <a
+              href={dsg.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-white"
+            >
+              dsg.co.za
+            </a>
+            ).
+          </p>
         </div>
       </div>
     </section>

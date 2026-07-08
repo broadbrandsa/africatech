@@ -41,6 +41,14 @@ export function Footer() {
             >
               LinkedIn
             </a>
+            <a
+              href={footer.atfWeb}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground"
+            >
+              {footer.atfWebLabel}
+            </a>
           </p>
         </div>
       </div>

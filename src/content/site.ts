@@ -235,12 +235,15 @@ export const faq = {
 export const finalCta = {
   h2: "5 slots. £6,000. Cape Town is calling.",
   cta: "Email yaron@dsg.co.za",
-  finePrint:
-    "Africa Tech Festival is organised by Informa. DSG is an independent exhibitor; this invitation is issued by DSG (dsg.co.za).",
+  // Rendered in cta.tsx with links to africatechfestival.com and dsg.co.za:
+  // "Africa Tech Festival is organised by Informa. DSG is an independent
+  //  exhibitor; this invitation is issued by DSG (dsg.co.za)."
 } as const;
 
 export const footer = {
   hashtag: "#DoingSomethingGreat",
+  atfWeb: "https://africatechfestival.com",
+  atfWebLabel: "africatechfestival.com",
   address: "15 6th Street, Parkhurst, Johannesburg, South Africa",
   tel: "+27 11 759 7000",
   telHref: "tel:+27117597000",

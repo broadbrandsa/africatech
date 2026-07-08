@@ -1,4 +1,4 @@
-import { stats } from "@/content/site";
+import { event, stats } from "@/content/site";
 
 export function Stats() {
   return (
@@ -24,7 +24,16 @@ export function Stats() {
         <p className="mt-8 text-lg font-medium">
           {stats.kicker}{" "}
           <span className="text-sm font-normal text-muted-foreground">
-            ({stats.source})
+            ({stats.source}{" "}
+            <a
+              href={event.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-foreground"
+            >
+              africatechfestival.com
+            </a>
+            )
           </span>
         </p>
       </div>
