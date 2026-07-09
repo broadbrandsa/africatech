@@ -16,7 +16,7 @@ public/images/              # Assets copied from the site-content pack
 
 - `src/app/page.tsx` composes the page from section components only — no inline copy.
 - One file per section in `src/components/sections/`:
-  `hero.tsx`, `stats.tsx`, `audience.tsx`, `offer.tsx`, `proven.tsx`, `testimonials.tsx`, `benefits.tsx`, `about-dsg.tsx`, `how-it-works.tsx`, `faq.tsx`, `cta.tsx`, `footer.tsx` — plus the shared `section-heading.tsx`.
+  `hero.tsx`, `stats.tsx`, `anchor-events.tsx`, `audience.tsx`, `speakers.tsx`, `offer.tsx`, `proven.tsx`, `testimonials.tsx`, `experience.tsx`, `benefits.tsx` (includes 8-stages accordion), `about-dsg.tsx`, `how-it-works.tsx`, `faq.tsx`, `market-moment.tsx`, `cta.tsx`, `footer.tsx` — plus shared `section-heading.tsx`, the client-side `site-nav.tsx` (sticky nav) and `floorplan-dialog.tsx` (lightbox).
 - Sections consume content via imports from `src/content/` — **no hard-coded stats inside components**.
 
 ## Content management approach

@@ -9,9 +9,9 @@ import { faq } from "@/content/site";
 
 export function Faq() {
   return (
-    <section className="py-20 sm:py-28">
+    <section id="faq" className="scroll-mt-16 py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-6">
-        <SectionHeading number="09" eyebrow="FAQ" title={faq.h2} />
+        <SectionHeading number="12" eyebrow="FAQ" title={faq.h2} />
 
         <Accordion type="single" collapsible className="mt-10">
           {faq.items.map((item) => (

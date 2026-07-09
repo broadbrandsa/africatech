@@ -6,7 +6,7 @@ import { hero, MAILTO } from "@/content/site";
 
 export function Hero() {
   return (
-    <section className="grain relative flex min-h-svh flex-col overflow-hidden">
+    <section id="top" className="grain relative flex min-h-svh flex-col overflow-hidden">
       <Image
         src={hero.image}
         alt="Crowds arriving at Africa Tech Festival 2025, CTICC Cape Town"

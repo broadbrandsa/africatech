@@ -5,10 +5,10 @@ import { proven } from "@/content/site";
 
 export function Proven() {
   return (
-    <section className="py-20 sm:py-28">
+    <section id="stand" className="scroll-mt-16 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
-          number="04"
+          number="06"
           eyebrow="Proven model"
           title={proven.h2}
         />

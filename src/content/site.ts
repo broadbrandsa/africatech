@@ -8,6 +8,8 @@
  *   04-SITE-COPY.md    — copy of record
  *   05-AUDIENCE-DATA.md — 2025 attendee list analysis
  *   06-DSG-PROFILE.md  — DSG facts, contact
+ *   10-ATF-WOW-CONTENT.md — deep festival content (anchor events, timeline,
+ *                           speakers, stages, experience, brand wall, media)
  */
 
 export const MAILTO =
@@ -51,6 +53,54 @@ export const stats = {
   source: "All 2025 figures, official ATF post-show data.",
 } as const;
 
+// Four anchor events + festival week timeline (10-ATF-WOW-CONTENT §1–2)
+export const anchorEvents = {
+  h2: "One week. Four anchor events.",
+  items: [
+    {
+      name: "AfricaCom",
+      body: "The home of connectivity & communications. 28 editions — the largest gathering of Africa-focused connectivity leaders in the world.",
+    },
+    {
+      name: "AfricaTech",
+      body: "Enterprise digital transformation, AI, fintech and cybersecurity.",
+    },
+    {
+      name: "AfricaIgnite",
+      body: "The startup & investor ecosystem — 750 startup attendees and 250 investors in 2025.",
+    },
+    {
+      name: "The AI Summit Cape Town",
+      body: "Co-located AI event, 17–19 November — real enterprise use-cases, regulation, ethics and scalable adoption.",
+    },
+  ],
+  kicker: "One Sponsor Delegate Pass covers all of it.",
+  timeline: [
+    {
+      when: "Mon 16 Nov",
+      title: "VIP & partner events begin",
+      body: "Ministerial Summit, Leaders In Africa Summit (invitation-only), VIP receptions.",
+    },
+    {
+      when: "Tue 17 – Thu 19 Nov",
+      title: "The expo",
+      body: "Halls 1–4 at CTICC: 8 stages, 230 sessions, 100+ hours of live content.",
+    },
+    {
+      when: "Tue 17 Nov, evening",
+      title: "AFest",
+      body: "The official networking party — around 2,000 revellers (2025: Grand Africa Café & Beach).",
+    },
+    {
+      when: "Festival week",
+      title: "AfricaCom Awards",
+      body: "Celebrating the year's best in African tech & connectivity.",
+    },
+  ],
+  coSponsorDays:
+    "Your three days: Day 1 — set up, then network at AFest. Day 2 — stand meetings and stage sessions. Day 3 — harvest leads, follow-ups booked before you fly home.",
+} as const;
+
 export const audience = {
   h2: "Your next customers walk this floor.",
   body: "Africa Tech Festival unites the full ecosystem across six pillars — Telecoms & Connectivity, Data Centres, AI, Cybersecurity, Startups and Digital Transformation — on eight content stages. The 2025 audience: 24% telecom operators, 29% technology solutions, 9% government, 8% banking & finance. More than half are director-level or above.",
@@ -82,28 +132,247 @@ export const audience = {
     "Absa",
   ],
   companiesStat: "5,510 unique companies attended in 2025.",
-  // 2026 sponsors/exhibitors already confirmed (africatechfestival.com + Halls 1–4 floor plan, July 2026)
-  confirmed2026: [
-    "MTN",
-    "Orange",
-    "Eutelsat",
-    "ServiceNow",
-    "Zoho",
-    "ManageEngine",
-    "Odoo",
-    "Tarana",
-    "Spacecom",
-    "Hytera",
-    "OpenServe",
-    "Sentech",
-    "Comviva",
-    "WIOCC",
-    "Legrand",
-    "Turksat",
-  ],
-  confirmed2026Label: "Already committed to the 2026 floor:",
-  confirmed2026Suffix: "— and the halls are filling up.",
+  // Brand wall — 10-ATF-WOW-CONTENT §7 (text chips only, no third-party logo files)
+  brandWall: {
+    heading: "Share the floor with",
+    rows: [
+      {
+        label: "2025 sponsors included",
+        names: [
+          "Huawei",
+          "Orange (Platinum)",
+          "Cassava Technologies",
+          "HONOR (Diamond)",
+          "Ericsson",
+          "Vertiv",
+          "Digital Realty",
+          "Eutelsat",
+          "Ookla",
+          "SES",
+          "Openserve",
+          "Utimaco",
+        ],
+      },
+      {
+        label: "Already committed for 2026",
+        names: [
+          "MTN",
+          "Ericsson",
+          "Eutelsat",
+          "Orange SA",
+          "OpenServe",
+          "ServiceNow",
+          "Zoho",
+          "ManageEngine",
+          "Odoo",
+          "Tarana",
+          "Spacecom",
+          "Hytera",
+          "FiberOne",
+          "Sentech",
+          "Comviva",
+          "WIOCC",
+          "Legrand",
+          "Turksat",
+          "Space42",
+        ],
+      },
+    ],
+    suffix: "— and the halls are filling up.",
+    floorplan: {
+      src: "/images/floorplans/atf-2026-halls-1-4-floorplan.jpg",
+      alt: "Africa Tech Festival 2026 floor plan, Halls 1–4 at CTICC",
+      caption: "Halls 1–4 — selling fast",
+    },
+  },
   image: "/images/event-imagery/atf-showfloor-crowd.jpg",
+} as const;
+
+// 2025 headline speakers — publicly announced (10-ATF-WOW-CONTENT §3)
+export const speakers = {
+  h2: "The calibre on stage.",
+  stat: "450 speakers. 230 sessions. Standing-room-only keynotes.",
+  items: [
+    {
+      name: "Bernardo Mariano Junior",
+      role: "Assistant Secretary-General & CIO",
+      org: "United Nations",
+    },
+    {
+      name: "Mark Elliott",
+      role: "President, Africa",
+      org: "Mastercard",
+    },
+    {
+      name: "Hon. Solly Malatsi",
+      role: "Minister of Communications & Digital Technologies",
+      org: "South Africa",
+    },
+    {
+      name: "Ravi Bhat",
+      role: "Chief Technology & Solutions Officer",
+      org: "Microsoft Africa",
+    },
+    {
+      name: "Tumi Chamayou",
+      role: "Chief Enterprise Business Officer",
+      org: "MTN South Africa",
+    },
+    {
+      name: "Odunayo Eweniyi",
+      role: "Co-founder & COO, PiggyVest",
+      org: "GP, First Capital",
+    },
+  ],
+  footnote:
+    "2025 line-up shown; 2026 speakers are announced through the year at",
+  footnoteLinkLabel: "africatechfestival.com",
+} as const;
+
+// Eight stages with full themes — official 2026 stages graphic (10-ATF-WOW-CONTENT §6)
+export const stages = {
+  heading: "Explore the 8 stages",
+  items: [
+    {
+      name: "Next Gen Networks",
+      themes: [
+        "Monetising 5G, satellite & alternative networks",
+        "Private networks",
+        "AI-driven network optimisation",
+        "Smartphone affordability",
+      ],
+    },
+    {
+      name: "The Future of Fibre",
+      themes: [
+        "Fibre investment & monetisation",
+        "Subsea cables",
+        "FTTH & last-mile",
+        "Enterprise capacity demand",
+      ],
+    },
+    {
+      name: "AI Enabled Telco & Mobile Money",
+      themes: [
+        "Telcos vs OTTs",
+        "Mobile money profitability",
+        "Superapps",
+        "AI personalisation & digital ecosystems",
+      ],
+    },
+    {
+      name: "Data Centres & Cloud Services",
+      themes: [
+        "Cost, power & scalability",
+        "Investment & capital flows",
+        "AI infrastructure & edge",
+        "Data sovereignty",
+      ],
+    },
+    {
+      name: "Artificial Intelligence",
+      themes: [
+        "GenAI to agentic AI",
+        "AI ROI today",
+        "Enterprise architectures",
+        "Governance & sector use-cases",
+      ],
+    },
+    {
+      name: "Digital Transformation",
+      themes: [
+        "Modernising legacy",
+        "Cloud vs hybrid",
+        "Platform & API thinking",
+        "Measuring ROI, AI-ready organisations",
+      ],
+    },
+    {
+      name: "Cybersecurity",
+      themes: [
+        "Identity & trust",
+        "Fraud & financial crime",
+        "Securing cloud & hybrid",
+        "AI threat detection & cyber resilience",
+      ],
+    },
+    {
+      name: "Startups",
+      themes: [
+        "Scaling pan-African",
+        "Fundraising",
+        "Corporate–startup partnerships",
+        "Talent & exits",
+      ],
+    },
+  ],
+} as const;
+
+// Festival experience mosaic — 10-ATF-WOW-CONTENT §4
+// Honesty rule: VIP/summit items are presented as happening around the event,
+// never as included in the co-sponsor package.
+export const experience = {
+  h2: "The festival experience.",
+  items: [
+    {
+      src: "/images/event-imagery/atf-afest-party.jpg",
+      alt: "AFest party crowd at Africa Tech Festival",
+      caption:
+        "AFest — the biggest celebration in African tech. Around 2,000 revellers close Day 1 (2025: Grand Africa Café & Beach).",
+    },
+    {
+      src: "/images/event-imagery/atf-vip-village-pods.jpg",
+      alt: "VIP Village pods at Africa Tech Festival",
+      caption:
+        "The VIP Village — 900+ unique C-level VIPs across 3 days, all around you all week.",
+    },
+    {
+      src: "/images/event-imagery/atf-fireside-chat.jpg",
+      alt: "Fireside chat session at Africa Tech Festival",
+      caption: "100+ hours of live content across 8 stages.",
+    },
+    {
+      src: "/images/event-imagery/atf-ministerial-summit.jpg",
+      alt: "Leaders In Africa Summit at Africa Tech Festival",
+      caption:
+        "Leaders In Africa Summit — the invitation-only forum for CEOs, founders and policymakers, running alongside.",
+    },
+    {
+      src: "/images/event-imagery/atf-leaders-summit-tables.jpg",
+      alt: "Ministerial Summit roundtables at Africa Tech Festival",
+      caption:
+        "The Ministerial Summit — ministers and regulators alongside global tech execs, in the VIP programme around the expo.",
+    },
+    {
+      src: "/images/event-imagery/atf-networking-lounge.jpg",
+      alt: "Networking lounge at Africa Tech Festival",
+      caption: "21,900+ connections made through the event app in 2025.",
+    },
+  ],
+  note: "VIP Village and the summits are part of the festival week around the expo — access is separate from the co-sponsor package.",
+} as const;
+
+// The market moment — 10-ATF-WOW-CONTENT §8–9
+export const marketMoment = {
+  theme: "Powering Africa's Digital Transformation Together",
+  themeLabel: "The ATF 2026 theme",
+  quote:
+    "Africa's digital future isn't being discussed in silos… the only forum that brings together the infrastructure powering the continent and the technologies transforming it — where strategy becomes execution, partnerships are formed, and investment decisions accelerate Africa's digital economy.",
+  attribution: "Africa Tech Festival",
+  media:
+    "$40m in PR value across ATF media & marketing channels in 2025 — covered by CNBC Africa, Xinhua and African Business. Backed by Informa, supported by South Africa's Department of Communications & Digital Technologies and the City of Cape Town.",
+} as const;
+
+// Sticky nav (appears after the hero)
+export const nav = {
+  links: [
+    { label: "Event", href: "#event" },
+    { label: "Offer", href: "#offer" },
+    { label: "The stand", href: "#stand" },
+    { label: "Experience", href: "#experience" },
+    { label: "FAQ", href: "#faq" },
+  ],
+  cta: "Claim a slot",
 } as const;
 
 export const offer = {
@@ -195,7 +464,7 @@ export const benefits = {
   items: [
     {
       title: "Headline keynotes & 8 stages",
-      body: "Next Gen Networks, Future of Fibre, AI Enabled Telco & Mobile Money, Data Centres & Cloud, AI, Digital Transformation, Cybersecurity, Startups.",
+      body: "From headline keynotes to deep-dive tracks — explore every stage below.",
     },
     {
       title: "AFest",

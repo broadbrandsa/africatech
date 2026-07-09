@@ -6,7 +6,7 @@ export function Testimonials() {
     <section className="border-y bg-card py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
-          number="05"
+          number="07"
           eyebrow="The industry on ATF"
           title={testimonials.h2}
         />

@@ -13,9 +13,9 @@ import { disclaimer, offer, MAILTO } from "@/content/site";
 
 export function Offer() {
   return (
-    <section id="offer" className="grain relative border-y bg-card py-20 sm:py-28">
+    <section id="offer" className="grain relative scroll-mt-16 border-y bg-card py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeading number="03" eyebrow="The offer" title={offer.h2} className="mx-auto text-center" />
+        <SectionHeading number="05" eyebrow="The offer" title={offer.h2} className="mx-auto text-center" />
 
         <Card className="relative mx-auto mt-14 max-w-2xl overflow-hidden border-brand/40 bg-background shadow-[0_0_80px_-20px_rgba(197,31,36,0.45)]">
           <div className="absolute inset-x-0 top-0 h-1 bg-brand" aria-hidden />

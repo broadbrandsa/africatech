@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Badge } from "@/components/ui/badge";
+import { FloorplanDialog } from "@/components/sections/floorplan-dialog";
 import { SectionHeading } from "@/components/sections/section-heading";
 import { audience } from "@/content/site";
 
@@ -14,7 +15,7 @@ export function Audience() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <SectionHeading
-              number="02"
+              number="03"
               eyebrow="The audience"
               title={audience.h2}
             />
@@ -74,16 +75,31 @@ export function Audience() {
         the official 2025 attendee list.
       </p>
 
-      <div className="mx-auto mt-12 max-w-6xl px-6">
-        <p className="text-xs font-medium tracking-[0.25em] uppercase text-muted-foreground">
-          {audience.confirmed2026Label}
+      <div className="mx-auto mt-14 max-w-6xl px-6">
+        <h3 className="font-heading text-2xl font-bold tracking-tight">
+          {audience.brandWall.heading}
+        </h3>
+        <div className="mt-8 space-y-8">
+          {audience.brandWall.rows.map((row) => (
+            <div key={row.label}>
+              <p className="text-xs font-medium tracking-[0.25em] uppercase text-muted-foreground">
+                {row.label}
+              </p>
+              <p className="mt-3 max-w-5xl text-lg leading-relaxed font-medium text-foreground/90">
+                {row.names.join(" · ")}
+              </p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-4 text-muted-foreground">
+          {audience.brandWall.suffix}
         </p>
-        <p className="mt-4 max-w-4xl text-lg leading-relaxed font-medium text-foreground/90">
-          {audience.confirmed2026.join(" · ")}{" "}
-          <span className="text-muted-foreground">
-            {audience.confirmed2026Suffix}
-          </span>
-        </p>
+
+        <FloorplanDialog
+          src={audience.brandWall.floorplan.src}
+          alt={audience.brandWall.floorplan.alt}
+          caption={audience.brandWall.floorplan.caption}
+        />
       </div>
     </section>
   );
