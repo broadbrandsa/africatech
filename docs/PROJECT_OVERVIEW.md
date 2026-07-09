@@ -6,8 +6,8 @@ A standalone invite/proposal website asking DSG partners to co-sponsor DSG's sta
 
 ## The offer
 
-- **£6,000 per co-sponsor**, all-in
-- **5 slots only**, first come first served
+- **£5,000 per co-sponsor**, all-in
+- Number of co-sponsor places is not advertised on the site
 - All CTAs email **yaron@dsg.co.za** (pre-filled mailto subject)
 
 ## Target audience
@@ -16,7 +16,7 @@ Existing and prospective DSG partners — B2B tech vendors (security, telecom so
 
 ## Goal
 
-5 co-sponsor commitments at £6,000 each, via email to yaron@dsg.co.za.
+Co-sponsor commitments at £5,000 each, via email to yaron@dsg.co.za.
 
 ## Deployment environment
 

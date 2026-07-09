@@ -20,11 +20,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "DSG × Africa Tech Festival 2026 — Co-Sponsor Invitation",
   description:
-    "Share DSG's stand at Africa Tech Festival 2026, 17–19 November, CTICC Cape Town. 5 co-sponsor slots at £6,000 each. One price, zero logistics, full festival presence.",
+    "Share DSG's stand at Africa Tech Festival 2026, 17–19 November, CTICC Cape Town. Co-sponsor at £5,000 each. One price, zero logistics, full festival presence.",
   openGraph: {
     title: "DSG × Africa Tech Festival 2026 — Co-Sponsor Invitation",
     description:
-      "5 partners. £6,000 each. Share DSG's stand at Africa's biggest tech event — 17–19 November 2026, CTICC Cape Town.",
+      "£5,000 each. Share DSG's stand at Africa's biggest tech event — 17–19 November 2026, CTICC Cape Town.",
     images: ["/images/event-imagery/atf-2025-entrance-crowd.jpg"],
   },
 };

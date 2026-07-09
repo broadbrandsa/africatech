@@ -31,10 +31,10 @@ export const event = {
 export const hero = {
   eyebrow: "DSG × Africa Tech Festival 2026",
   h1: "Share our stand at Africa's biggest tech event.",
-  sub: "DSG is returning to Africa Tech Festival — 17–19 November 2026, CTICC Cape Town — and we're inviting 5 partners to co-sponsor our stand. One price. Zero logistics. Full festival presence.",
-  primaryCta: "Claim one of 5 slots",
+  sub: "DSG is returning to Africa Tech Festival — 17–19 November 2026, CTICC Cape Town — and we're inviting partners to co-sponsor our stand. One price. Zero logistics. Full festival presence.",
+  primaryCta: "Become a co-sponsor",
   secondaryCta: "See what's included",
-  badges: ["£6,000 per co-sponsor", "5 slots only", "17–19 Nov 2026", "CTICC Cape Town"],
+  badges: ["£5,000 per co-sponsor", "17–19 Nov 2026", "CTICC Cape Town"],
   image: "/images/event-imagery/atf-2025-entrance-crowd.jpg",
 } as const;
 
@@ -375,13 +375,12 @@ export const nav = {
     { label: "Experience", href: "#experience" },
     { label: "FAQ", href: "#faq" },
   ],
-  cta: "Claim a slot",
+  cta: "Get in touch",
 } as const;
 
 export const offer = {
-  h2: "One stand. Five partners. £6,000 each.",
-  price: "£6,000",
-  slots: 5,
+  h2: "One shared stand. £5,000 each.",
+  price: "£5,000",
   inclusions: [
     "Dedicated branded panel on the DSG stand",
     "Table, 2 chairs and TV screen for your team",
@@ -391,8 +390,8 @@ export const offer = {
   ],
   compare:
     "The cheapest solo stand at ATF 2026 is £9,827 — space only, before build costs. An entry shell scheme runs £10,259–£11,267.",
-  cta: "Reserve your slot",
-  urgency: "5 slots. When they're gone, they're gone.",
+  cta: "Become a co-sponsor",
+  urgency: "A full festival presence, without the logistics.",
 } as const;
 
 // Must appear on site (03-OFFER.md)
@@ -401,7 +400,7 @@ export const disclaimer =
 
 export const proven = {
   h2: "We've done this before — and partners came back.",
-  body: "DSG has anchored a shared stand at AfricaCom since 2022. Our past co-exhibitors include global brands that chose a DSG slot over going it alone.",
+  body: "DSG has anchored a shared stand at AfricaCom since 2022. Our past co-exhibitors include global brands that chose to share the DSG stand rather than going it alone.",
   logos: [
     { name: "Irdeto", src: "/images/logos/co-exhibitors-2022/irdeto.png" },
     { name: "Splunk", src: "/images/logos/co-exhibitors-2022/splunk.png" },
@@ -528,8 +527,8 @@ export const steps = {
       body: "yaron@dsg.co.za — tell us who you are.",
     },
     {
-      title: "Confirm your slot",
-      body: "£6,000, invoiced by DSG. 5 slots, first come first served.",
+      title: "Confirm your co-sponsorship",
+      body: "£5,000 per co-sponsor, invoiced by DSG.",
     },
     {
       title: "We book & build",
@@ -547,11 +546,7 @@ export const faq = {
   items: [
     {
       q: "How much does it cost?",
-      a: "£6,000 per co-sponsor, all-in for the package listed above. Travel and accommodation are your own.",
-    },
-    {
-      q: "How many slots are there?",
-      a: "Five. Once allocated, the invite closes.",
+      a: "£5,000 per co-sponsor, all-in for the package listed above. Travel and accommodation are your own.",
     },
     {
       q: "Where exactly is the stand?",
@@ -573,7 +568,7 @@ export const faq = {
 } as const;
 
 export const finalCta = {
-  h2: "5 slots. £6,000. Cape Town is calling.",
+  h2: "£5,000 each. Cape Town is calling.",
   cta: "Email yaron@dsg.co.za",
   // Rendered in cta.tsx with links to africatechfestival.com and dsg.co.za:
   // "Africa Tech Festival is organised by Informa. DSG is an independent

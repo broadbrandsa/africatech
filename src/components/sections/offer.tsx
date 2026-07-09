@@ -21,26 +21,14 @@ export function Offer() {
           <div className="absolute inset-x-0 top-0 h-1 bg-brand" aria-hidden />
           <CardHeader className="pt-8 text-center">
             <p className="text-xs font-semibold tracking-[0.25em] uppercase text-muted-foreground">
-              Co-sponsor slot
+              Co-sponsor package
             </p>
             <p className="mt-3 font-heading text-7xl font-extrabold tracking-tight">
               {offer.price}
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
-              all-in · {offer.slots} slots only · first come, first served
+              all-in, per co-sponsor
             </p>
-            <div
-              className="mt-5 flex items-center justify-center gap-2"
-              aria-label={`${offer.slots} slots available`}
-            >
-              {Array.from({ length: offer.slots }).map((_, i) => (
-                <span
-                  key={i}
-                  className="h-2 w-8 rounded-full bg-brand/80"
-                  aria-hidden
-                />
-              ))}
-            </div>
           </CardHeader>
           <CardContent>
             <Separator className="mb-6" />

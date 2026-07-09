@@ -24,4 +24,4 @@ Option: enable `@vercel/analytics` (zero-config) at launch — recommended as th
 ## Conversion goals (placeholder)
 
 - **Primary conversion:** mailto click to yaron@dsg.co.za.
-- **Business target:** 5 committed co-sponsors at £6,000 each.
+- **Business target:** committed co-sponsors at £5,000 each.
