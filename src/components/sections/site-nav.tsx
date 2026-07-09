@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { Mail } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { nav, MAILTO } from "@/content/site";
+import { DSG_LOGO, nav, MAILTO } from "@/content/site";
 import { cn } from "@/lib/utils";
 
 export function SiteNav() {
@@ -34,9 +35,18 @@ export function SiteNav() {
       <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-6">
         <a
           href="#top"
-          className="font-heading text-sm font-bold tracking-tight whitespace-nowrap"
+          className="flex items-center gap-2 font-heading text-sm font-bold tracking-tight whitespace-nowrap"
         >
-          DSG <span className="text-brand">×</span> ATF 2026
+          <Image
+            src={DSG_LOGO}
+            alt="DSG — Digital Solutions Group"
+            width={200}
+            height={81}
+            className="h-6 w-auto object-contain"
+          />
+          <span>
+            <span className="text-brand">×</span> ATF 2026
+          </span>
         </a>
         <ul className="hidden items-center gap-6 sm:flex">
           {nav.links.map((link) => (

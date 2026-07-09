@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ArrowDown, Mail } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { hero, MAILTO } from "@/content/site";
+import { DSG_LOGO, hero, MAILTO } from "@/content/site";
 
 export function Hero() {
   return (
@@ -19,7 +19,18 @@ export function Hero() {
       <div className="absolute inset-0 bg-linear-to-r from-background/70 via-transparent to-transparent" />
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-end px-6 pt-24 pb-16 sm:pb-24">
-        <p className="animate-rise text-xs font-semibold tracking-[0.3em] uppercase text-brand sm:text-sm">
+        <Image
+          src={DSG_LOGO}
+          alt="DSG — Digital Solutions Group"
+          width={200}
+          height={81}
+          priority
+          className="animate-rise h-10 w-auto self-start object-contain sm:h-12"
+        />
+        <p
+          className="animate-rise mt-6 text-xs font-semibold tracking-[0.3em] uppercase text-brand sm:text-sm"
+          style={{ animationDelay: "50ms" }}
+        >
           {hero.eyebrow}
         </p>
         <h1

@@ -15,6 +15,9 @@
 export const MAILTO =
   "mailto:yaron@dsg.co.za?subject=ATF%202026%20Co-Sponsorship";
 
+// White DSG logo for dark backgrounds (hero, nav, footer)
+export const DSG_LOGO = "/images/logos/dsg/dsg-white.png";
+
 export const event = {
   name: "Africa Tech Festival 2026",
   dates: "17–19 November 2026",
@@ -505,6 +508,14 @@ export const dsg = {
     { value: "28+", label: "years delivering digital outcomes" },
   ],
   clients: "Including Nando's, KFC, PEP, Pick n Pay Mobile and DStv Internet.",
+  brandsLabel: "Group brands & products include",
+  brands: [
+    { name: "CXG — Customer Experience Group", src: "/images/logos/dsg/cxg-white.png" },
+    { name: "MVNE — Mobile Virtual Network Enabler", src: "/images/logos/dsg/mvne-white.png" },
+    { name: "Digitalise", src: "/images/logos/dsg/digitalise-white.png" },
+    { name: "Broadbrand", src: "/images/logos/dsg/broadbrand-white.png" },
+    { name: "Xanite", src: "/images/logos/dsg/xanite-white.svg" },
+  ],
   url: "https://dsg.co.za",
   urlLabel: "dsg.co.za",
 } as const;
@@ -579,5 +590,5 @@ export const footer = {
   web: "https://dsg.co.za",
   webLabel: "dsg.co.za",
   linkedin: "https://www.linkedin.com/company/digital-solutions-group",
-  logo: "/images/logos/dsg-logo-red-on-black.png",
+  logo: DSG_LOGO,
 } as const;

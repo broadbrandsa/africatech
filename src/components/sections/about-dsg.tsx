@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -40,6 +41,25 @@ export function AboutDsg() {
               </div>
             ))}
           </dl>
+        </div>
+
+        <div className="mt-14 border-t pt-10">
+          <p className="text-xs font-medium tracking-[0.25em] uppercase text-muted-foreground">
+            {dsg.brandsLabel}
+          </p>
+          <ul className="mt-6 flex flex-wrap items-center gap-x-12 gap-y-6">
+            {dsg.brands.map((brand) => (
+              <li key={brand.name}>
+                <Image
+                  src={brand.src}
+                  alt={brand.name}
+                  width={160}
+                  height={48}
+                  className="h-7 w-auto object-contain opacity-75 transition-opacity duration-100 hover:opacity-100 sm:h-8"
+                />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
